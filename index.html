@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="GivenFiles/dailyValues.js"></script>
+    <script src="GivenFiles/sectors.js"></script>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <title></title>
+</head>
+<body>
+    <!-- Headers -->
+    <div>
+        <h1>מניות</h1>
+    </div>
+    <!-- Filtering -->
+    <div>
+        <label for="">סינון</label>
+        <select onchange="updateTablev2()" id="searchSector">
+            <optgroup label="כללי">
+                <option value="הכל"> הכל</option>
+            </optgroup>
+        </select>
+    </div>
+    <!-- Tables rows -->
+    <div>
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>שם מניה</th><th>סימון מניה</th><th>מספר מניה</th><th>ענף מניה</th><th>שעת פתיחה</th><th>שעת סיום</th><th>(%) אחוז שינוי</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+    <!-- Paging -->
+    <div id="#paging">
+        <label for="">עמוד מס</label>
+        <select onchange="PageSelect()" id="selectPage"></select>
+        <input id="prev" onclick="clickPrev()" type="button" value="<">
+        <input id="next" onclick="clickNext()" type="button" value=">">
+    </div>
+    
+    
+</body>
+<script src="Code/core.js"></script>
+</html>
+<!--בשיר חוסין
+כיתה א תוכנה 
+תז:-212005862-->

@@ -1,0 +1,86 @@
+body {
+  font: normal medium/1.4 sans-serif;
+  font-family: 'Heebo', sans-serif;
+  background-color: #242729;
+  color: #fff;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: 700;
+}
+th, td {
+  padding: 0.25rem;
+  text-align: center;
+  border-left: 1px solid #aaa;
+}
+th:first-of-type, td:first-of-type{
+  border-right: 1px solid #aaa;
+}
+label{
+  font-weight: 700;
+  font-size: x-large;
+}
+th{
+  cursor: pointer;
+  background: #111;
+}
+tbody tr:nth-child(even) {
+  background: #2f3030;
+}
+tbody tr:nth-child(odd) {
+  background: #474747;
+}
+tbody tr:hover {
+  background: #4786e6;
+  color: #fff;
+}
+#searchSector{
+  width: 30%;
+  font-size: x-large;
+  font-weight: 700;
+  text-align-last:center;
+  color:#fff;
+  background-color: #474747;
+  box-sizing: border-box;
+  border: rgba(0,0,0,0.0);
+}
+input[type="button"]:enabled:hover,#selectPage:focus,#searchSector:focus{
+  background: #4786e6;
+  border:0;
+  outline: none;
+}
+#selectPage,input[type="button"]{
+  width: 50px;
+  font-size: x-large;
+  font-weight: 700;
+  text-align-last:center;
+  color:#fff;
+  background-color: #474747;
+  box-sizing: border-box;
+  border: rgba(0,0,0,0.0);
+}
+option,optgroup{
+  padding:10px,15px;
+  margin: 10px 15px 10px 15px;
+  background-color: #2f3030;
+}
+optgroup{
+  background-color: #474747;
+}
+div{
+  margin-bottom: 10px;
+  text-align: center;
+}
+.Up{
+  color: #11ee55;
+}
+.Down{
+  color: #ee5511;
+}
+input[type="button"]{
+  width: 30px;
+}
+input[type="button"]:disabled{
+  background-color: #2f3030;
+}
